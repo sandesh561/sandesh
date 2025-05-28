@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rogith hotel</title>
+</head>
+<body>
+   <center>
+    <h1>ROGITH HOTEL</h1>
+    <h3>WELCOME</h3>
+   
+    <label for="">idli RS-20</label>
+    <input type="text" name=""id="idli">
+    <br>
+    <br>
+    <label for="">roti RS-10</label>
+    <input type="text" name=""id="roti">
+    <br>
+    <br>
+    <label for="">mudde RS-25</label>
+    <input type="text" name=""id="mudde">
+    <br>
+    <br>
+    <label for="">dose RS-40</label>
+    <input type="text" name=""id="dose">
+    <br>
+    <br>
+    <label for="">uppi-2 RS-20</label>
+    <input type="text" name=""id="uppi-2">
+    <br>
+    <br>
+    <button onclick="bill()">submit</button>
+    <script>
+        function bill()
+        {
+            var idli=document.getElementById("idli").value;
+            var roti=document.getElementById("roti").value;
+            var mudde=document.getElementById("mudde").value;
+            var dose=document.getElementById("dose").value;
+            var uppi=document.getElementById("uppi-2").value;
+            var total=idli*20+roti*10+mudde*25+dose*40+uppi*20;
+            alert(total);
+
+        }
+    </script></center>
+   
+</body>
+</html>
